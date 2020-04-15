@@ -1,0 +1,62 @@
+JavaScript - Form Validation
+avaScript provides a way to validate form's data on the client's computer before sending it to the web server. Form validation generally performs two functions.
+
+Basic Validation − First of all, the form must be checked to make sure all the mandatory fields are filled in.
+It would require just a loop through each field in the form and check for data.
+
+Data Format Validation − Secondly, the data that is entered must be checked for correct form and value. 
+Our code must include appropriate logic to test correctness of data.
+
+JavaScript - Animation
+We can use JavaScript to create a complex animation having, but not limited to, the following elements −
+
+-Fireworks
+-Fade Effect
+-Roll-in or Roll-out
+-Page-in or Page-out
+-Object movements
+
+JavaScript provides the following two functions to be frequently used in animation programs.
+
+-setTimeout( function, duration) − This function calls function after duration milliseconds from now.
+-setInterval(function, duration) − This function calls function after every duration milliseconds.
+-clearTimeout(setTimeout_variable) − This function calls clears any timer set by the setTimeout() functions.
+
+JavaScript - Multimedia
+The JavaScript navigator object includes a child object called plugins. This object is an array,
+with one entry for each plug-in installed on the browser. The navigator.plugins object is supported only by Netscape,
+Firefox, and Mozilla only.
+
+Checking for Plug-Ins
+Each plug-in has an entry in the array. Each entry has the following properties −
+->name − is the name of the plug-in.
+->filename − is the executable file that was loaded to install the plug-in.
+->description − is a description of the plug-in, supplied by the developer.
+->mimeTypes − is an array with one entry for each MIME type supported by the plug-in.
+
+JavaScript - Debugging
+The process of finding and fixing bugs is called debugging and is a normal part of the development process.
+This section covers tools and techniques that can help you with debugging tasks.
+
+Error Messages in Firefox or Mozilla
+Other browsers like Firefox, Netscape, and Mozilla send error messages to a special window called the JavaScript
+Console or Error Consol. To view the console, select Tools → Error Consol or Web Development.
+
+Unfortunately, since these browsers give no visual indication when an error occurs, you must keep the Console open and
+watch for errors as your script executes.
+
+Error Notifications
+Error notifications that show up on Console or through Internet Explorer dialog boxes are the result of both syntax and 
+runtime errors. These error notification include the line number at which the error occurred.
+
+If you are using Firefox, then you can click on the error available in the error console to go to the exact line in the 
+script having error.
+
+code for debugger-
+var debugging = true;
+var whichImage = "widget";
+if( debugging )
+   alert( "Calls swapImage() with argument: " + whichImage );
+   var swapStatus = swapImage( whichImage );
+if( debugging )
+   alert( "Exits swapImage() with swapStatus=" + swapStatus );
